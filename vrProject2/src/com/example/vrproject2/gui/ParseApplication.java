@@ -1,4 +1,4 @@
-package com.example.vrproject2;
+package com.example.vrproject2.gui;
 
 import com.parse.Parse;
 import com.parse.ParseACL;

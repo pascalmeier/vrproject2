@@ -1,5 +1,7 @@
-package com.example.vrproject2;
+package com.example.vrproject2.gui;
 
+import com.example.vrproject2.R;
+import com.example.vrproject2.util.LocationService;
 import com.parse.LogInCallback;
 import com.parse.ParseException;
 import com.parse.ParseUser;
@@ -43,9 +45,11 @@ public class LoginFragment extends Fragment {
 			@Override  
 			public void done(ParseUser user, ParseException e) {
 			    if (user != null) {
-			      Intent i= new Intent();
-			      i.setClass(getActivity().getApplicationContext(), MenuActivity.class);
-			      startActivity(i);
+			    	Intent intent = new Intent(getActivity().getApplicationContext(), LocationService.class);
+			    	getActivity().startService(intent);
+			    	Intent i= new Intent();
+			    	i.setClass(getActivity().getApplicationContext(), MenuActivity.class);
+			    	startActivity(i);
 			    } else {
 			      // Signup failed. Look at the ParseException to see what happened.
 			    }

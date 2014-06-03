@@ -9,5 +9,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_signup_fragment">SignupFragment</string>
     <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
 
 </resources>

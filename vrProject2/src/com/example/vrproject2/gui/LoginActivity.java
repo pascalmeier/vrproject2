@@ -1,6 +1,8 @@
-package com.example.vrproject2;
+package com.example.vrproject2.gui;
 
 import java.util.Locale;
+
+import com.example.vrproject2.R;
 
 
 
